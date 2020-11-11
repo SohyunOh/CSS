@@ -1,0 +1,4 @@
+/* css문법만 적기 */
+@import url("commin.css"); 
+/* css파일의 import */
+span {color: blue;}
