@@ -15,7 +15,6 @@
         border: 1px solid #777;
         position: relative;
         padding: 10px;
-        background-color: lightcoral;
       }
       .list-img {
         /* 사진 올리기 */
@@ -33,7 +32,6 @@
       }
       .list-content {
         padding-top: 10px;
-        background-color: lightblue;
       }
       .list-control {
         overflow: hidden;
@@ -46,50 +44,57 @@
         resize: vertical; /*textarea 수직으로만 수정가능 */
         padding: 10px; /* 글영역안쪽 여백 */
       }
-      .list-control input {
+      .list-control .list-input {
         float: left;
+        width: 100px;
       }
       .list-control button {
         float: right;
+        display: inline;
       }
       .list-input {
         display: block;
         width: 100px;
       }
-
+      /* 아랫단 */
       .bot {
         width: 50%;
         margin: 0 auto;
         border: 1px solid #777;
         padding: 10px;
+        position: relative;
+        overflow: hidden;
       }
 
       .bot-img {
         position: absolute;
+        top: 10px;
+        left: 10px;
       }
 
       .bot-img img {
         width: 50%;
       }
-   
+
       .bot-content {
         padding-left: 60px;
         overflow: hidden;
-        padding-top: 10px;
-        background-color: lightblue;
-    
       }
-   
+      .bot-input {
+        overflow: hidden;
+      }
+
+      .bot-content .bot-input {
+        float: left;
+      }
       .bot-input p {
-          display: block;
-          background-color: lightgreen;
+        display: block;
+        width: 50px;
       }
-      .bot-input button{
-          float: right;
+      .bot-input button {
+        float: right;
+        display: inline;
       }
-      
-
-
     </style>
   </head>
   <body>
@@ -118,12 +123,11 @@
       </div>
       <div class="bot-content">
         <div class="bot-input">
-            <p><strong>제목</strong></p>
-            <p><small>내용</small></p>
-          </div>
-          <button type="button">삭제</button>
-          <button type="button">수정</button>
+          <p><strong>제목</strong></p>
+          <p><small>내용</small></p>
         </div>
+        <button type="button">삭제</button>
+        <button type="button">수정</button>
       </div>
     </div>
   </body>
