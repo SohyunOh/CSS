@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+    <!-- 부트스트랩의 기능을 하용하기 위해 반드시 필요 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="css/bootstrap-theme.min.css"></script>
+
+    <style type="text/css">
+      /* 박스 넓이가 지정되어 있을 떄 가운데 정졀 
+      모든 col 옵션에 float:left 르 ㄹ가지고 있어서 바로는 적용이 안됨
+      만액에 그리드를 1개만 사용하고 해당 그리드를 가운데 정렬
+      fload을 없애는 none 과 같이 사용하면 됩니니다. */
+      .my-grid {
+        margin: 0 auto;
+        float: nome;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-xs-12" my-grid>
+            <!-- form-group 안에 form-control  -->
+            <div class="form-group">
+              <label for="email">Email address:</label>
+              <input type="email" class="form-control" />
+            </div>
+
+            <div class="form-group">
+              <label for="pwd">Password:</label>
+              <input type="password" class="form-control" id="pwd" />
+            </div>
+            <!-- 버튼 -->
+            <button type="submit" class="btn btn-default">Submit</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

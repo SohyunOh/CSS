@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+    <!-- 부트스트랩의 기능을 하용하기 위해 반드시 필요 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <style type="text/css"></style>
+  </head>
+  <body>
+    <!-- data-rarger 의 옵션이 모달창의 id와 연결 -->
+    <section class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <button
+            type="button"
+            class="btn btn-info btn-lg"
+            data-toggle="modal"
+            data-target="#myModal"
+          >
+            Open Modal
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 숨겨놓은 모달창 -->
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+            <h4 class="modal-title">제목</h4>
+          </div>
+          <div class="modal-body">
+
+            <!-- 내용.... -->
+           <div class="form-group">
+              <label for="email">Email address:</label>
+              <input type="email" class="form-control" />
+            </div>
+
+            <div class="form-group">
+              <label for="pwd">Password:</label>
+              <input type="password" class="form-control" id="pwd" />
+            </div>
+            <!-- 버튼 -->
+            <button type="submit" class="btn btn-default">Submit</button>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
