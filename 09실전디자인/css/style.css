@@ -1,0 +1,196 @@
+/* ====from, btn 윤곽 ====== */
+.form-control {
+  border-radius: 0;
+}
+.bnt {
+  border-radius: 0;
+}
+/* ======header====== */
+section {
+  margin: 50px;
+}
+
+.my-header {
+  background-color: rgb(8, 8, 8);
+  position: fixed; /* 해더 고정- body기준 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+  /* z측으로 50 */
+}
+.my-header a {
+  color: white;
+  font-size: 15px;
+}
+/*  */
+.navbar {
+  /*  마진을 없앰 */
+  margin-bottom: 0;
+}
+.navbar-brand {
+  padding: 10px 20px;
+}
+/* 가상선택자  */
+.nav > li > a:focus,
+.nav > li > a:hover {
+  background-color: rgb(70, 69, 71);
+}
+.nav .open > a,
+.nav .open > a:focus,
+.nav .open > a:hover {
+  background-color: rgb(70, 69, 71);
+}
+
+/* 윤각선- 보더에 컬러  */
+.navbar-toggle {
+  border-color: white;
+}
+.navbar-toggle .icon-bar {
+  background-color: white;
+}
+
+/* ==========footer========= */
+footer {
+  background-color: rgb(8, 8, 8);
+  color: white;
+  font-size: 13px;
+  padding: 40px 0; /* 위아래 , 좌우  */
+  margin: 70px; /*footer 바깥여백 70, 본문 영역에 붙지 않도록 */
+}
+footer .footer-copyrigth address {
+  margin-bottom: 0;
+}
+footer .footer-menu {
+  text-align: right; /* 부트스크립에서 제공함 */
+}
+footer .footer-menu li {
+  display: inline-block; /*한줄로 만들기  */
+  padding: 0 10px; /* 위아래 0 좌우 10 */
+}
+footer .footer-menu li a {
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+}
+
+/* ========banner============ */
+.my-banner {
+  margin-top: 50px;
+}
+.left carousel-control,
+.right carousel-control {
+  /* 암영 입히기 */
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    0,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+/* =========index -- 박스 설정=========== */
+
+.prod-list,
+.prod-box {
+  display: block; /* 블럭요소로 변경 */
+  border: 1px solid rgb(197, 197, 197);
+  text-align: center; /* 블럭이나 text를 가운데로 */
+}
+
+.prod-list,
+.prod-list > li {
+  padding: 5px; /* 가장 바깥, 숨긴 박스 패딩 5 */
+}
+.prod-box {
+  position: relative;
+}
+.prod-box .arrow {
+  display: block; /* 높이 넓이를 사용하기 위해 블럭지정 */
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  position: absolute; /* 부모기준으로 띄우기 / 위치 기반으로 올릴 부모클래스에relative  */
+  bottom: 20px;
+  left: 20px;
+  background-color: #ccc;
+  color: white;
+  opacity: 1;
+}
+
+.prod-box .hover {
+  display: block;
+  width: 100px;
+  height: 35px;
+  line-height: 35px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: #0096e4;
+  color: white;
+  font-size: 14px;
+  opacity: 0; /* (오퍼시티) 투명도 : 0~1 */
+}
+/* hover 기능시(프로드 박스에 호버가 올라갓을때 그 직속의 )arrow 의 투명도 변경 */
+.prod-box:hover > .arrow {
+  opacity: 0;
+}
+
+.prod-box:hover > .hover {
+  opacity: 1;
+}
+
+/*  호버 시 자신의 보더(윤곽 라인) 변화 */
+.prod-box:hover {
+  border: 1px solid #0096e4;
+}
+
+/* =====상품그리드======= */
+/* 이미지 중심으로 설정 */
+.prod-img {
+  text-align: center;
+}
+/* 부모영역에 hidden */
+.prod-content {
+  overflow: hidden;
+  padding: 20px 0px;
+}
+.prod-info {
+  float: left;
+}
+.prod-price {
+  display: block;
+  float: right;
+}
+.prod-info span {
+  display: block;
+}
+/* 숨겨놓은 영역 */
+.prod-color {
+  margin-top: -36px 0px;
+  opacity: 0;
+  /* 트렌지션(transition , 애니메이션- 젼경할 옵션, 주기, 변경 속도, 딜레이초)
+    : 오퍼시티옵션을 0.5초 로 빨라졌다 느려졌다를 보여줌 */
+  transition: opacity 0.5s ease-in-out;
+}
+.prod-color ul {
+  overflow: hidden;
+}
+.prod-color ul li {
+  float: left;
+}
+
+.prod-list2:hover > .prod-color {
+  opacity: 1;
+}
+
+.text-center {
+  overflow: hidden;
+}
+.text-center ul {
+  margin: 0;
+}
+.text-center button {
+  float: right;
+  padding: 4px 12px;
+}

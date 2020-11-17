@@ -2,7 +2,7 @@
 
 /* 전역에서 사용할 폰트 */
 
-@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
 
 /* 디자인 시작시 전역 설정 */
 * {
@@ -13,7 +13,7 @@
 
 body,
 html {
-  font-family: "Jua", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   width: 100%;
   min-width: 320px; /* 바디영역의 최소사이즈 */
 }
