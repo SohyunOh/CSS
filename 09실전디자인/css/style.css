@@ -56,7 +56,7 @@ footer {
   color: white;
   font-size: 13px;
   padding: 40px 0; /* 위아래 , 좌우  */
-  margin: 70px; /*footer 바깥여백 70, 본문 영역에 붙지 않도록 */
+  margin: 0px; /*footer 바깥여백 70, 본문 영역에 붙지 않도록 */
 }
 footer .footer-copyrigth address {
   margin-bottom: 0;
@@ -193,4 +193,45 @@ footer .footer-menu li a {
 .text-center button {
   float: right;
   padding: 4px 12px;
+}
+
+/* ==========회원가입========= */
+/* 제목 박스 */
+.title-box {
+  width: 250px;
+  margin: 60px auto; /* 박스정렬 */
+  text-align: center; /* 글씨 정렬 */
+  padding: 20px 40px;
+  border-bottom: 1px solid #e1e1e1;
+  border-top: 1px solid #e1e1e1;
+}
+.join-form {
+  /* 하나의 그리드 상자를 가운데 정렬을 하는 방법 */
+  margin: 0 auto; /* 가운데 정렬이 안되는 이유 - col관련된 클래스들이 float을 가지고 있기 떄문 */
+  float: none;
+}
+
+.join-form form {
+  border: 1px solid #777;
+  border-radius: 8px; /* 모서리를 둥글게 깍아줌 */
+  box-shadow: 0px 8px 16px rgb(184, 184, 184); /* 박스 그림자 (가로 세로 흐릿정도색상) */
+  padding: 50px;
+}
+/* 767px 미만일때 적용 (col-xs가 작동하는 틱셀과 같음) */
+@media (max-width: 767px) {
+  .join-form form {
+    padding: 50px 10px;
+  }
+}
+
+/* ===로그인화면에만 적용되는 디자인 ===*/
+.login-form {
+  margin: 0 auto;
+  float: none;
+}
+.login-form form {
+  border: 1px solid #777;
+  border-radius: 8px;
+  padding: 50px;
+  box-shadow: 0px 6px 12px #777;
 }
