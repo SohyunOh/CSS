@@ -14,19 +14,7 @@
      <link rel="stylesheet" href="css/reset.css" />
      <link rel="stylesheet" href="css/style.css" />
      <style type="text/css">
-/* 토글탭 basic */
-        .tabs-basic >li {
-            width: 25%;
-        }
-        .tabs-basic >li >a:hover{
-            background-color: #dddddd;
-        }
-        .tabs-basic >li >a{
-           color:#555;
-           margin: 0;
-           text-align: center;
-        }
-        /* 토글텝 디자인 */
+
     </style>
 </head>
 <body>
@@ -34,137 +22,128 @@
   <!-- 헤더 -->
   <header class="my-header">
     <nav class="navbar">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <!-- 휴대폰 사이즈로 줄였을때 나오는 버튼영역 -->
-          <button
-            type="button"
-            class="navbar-toggle"
-            data-toggle="collapse"
-            data-target="#myNavbar"
-          >
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-
-          <!-- 로고 영역 -->
-          <a class="navbar-brand" href="#"
-            ><img src="img/logo.svg" width="30" alt="logo"
-          /></a>
-        </div>
-
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <!-- 메뉴 작성 부분 -->
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Page 2</a></li>
-            <li><a href="#">Page 3</a></li>
-          </ul>
-          <!-- 우측 메뉴부분 (드롭다운) -->
-          <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#"
-                >로그인 <span class="caret"></span
-              ></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">로그인</a></li>
-                <li><a href="#">회원가입</a></li>
-              </ul>
-            </li>
-          </ul>
-          <!-- 네비바 폼영역 -->
-          <form class="navbar-form navbar-right" action="/action_page.php">
-            <div class="input-group">
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Search"
-                name="search"
-              />
-              <div class="input-group-btn">
-                <button class="btn btn-primary" type="submit">검색</button>
-              </div>
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <!-- 휴드폰사이즈 줄었때 나오는 버튼영역 -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="img/logo.svg" width="30" alt="logo"></a><!-- 로고 영역 -->
             </div>
-          </form>
-        </div>
-      </div>
-    </nav>
-  </header>
-<!-- 섹션1 -->
-  <section>
-    <div class="container">
-        <div class="row">
-          <div class="col-xs-12 ">
-              <!-- 탭을 눌렀을 떄 -->
-        <!-- li 와 아이디와tab-content안에 id 속성이 연결되어 있는 형태  -->
-        <div class="title-box">헬로</div>
 
-        <!-- ul에 개인 디자인  -->
-    <ul class="nav nav-tabs tabs-basic">
-        <!--"active" 로  href와 id를 연결 시켜서 화면이동을 시켜줌 -->
-        <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
-        <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
-        <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
-        <li><a data-toggle="tab" href="#menu3">Menu 3</a></li>
-      </ul>
-    
-      <div class="tab-content">
-        <div id="home" class="tab-pane fade in active">
-          <h3>HOME</h3>
-          <p>글 앞장</p>
+
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <!-- 메뉴작성부분 -->
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Page 2</a></li>
+                    <li><a href="#">Page 3</a></li>
+                </ul>
+                <!-- 우측 메뉴부분 (드롭다운부분으로 변경)-->
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">로그인<span
+                                class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">로그인</a></li>
+                            <li><a href="#">회원가입</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- 네비바 폼영역 -->
+                <form class="navbar-form navbar-right" action="##">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" name="search">
+                        <div class="input-group-btn">
+                            <button class="btn btn-primary" type="button"">검색</button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
         </div>
-        <div id="menu1" class="tab-pane fade">
-          <h3>Menu 1</h3>
-          <p>글1</p>
-        </div>
-        <div id="menu2" class="tab-pane fade">
-          <h3>Menu 2</h3>
-          <p> 글2</p>
-        </div>
-        <div id="menu3" class="tab-pane fade">
-          <h3>Menu 3</h3>
-          <p>글3</p>
-        
-        </div>
+    </nav>
+</header>
+<!-- 섹션1 -->
+<section>
+  <div class="container">
+      <div class="row">
+          <div class="col-xs-12">
+              <!-- 탭을 눌렀을 때 숨겨진 화면을 보여지게 처리하는 형태 -->
+              <!-- li의 아이디와 tab-content안에 id속성이 연결되어 있는 형태 -->
+
+              <!-- ul에 개인디자인 클래스 선언 -->
+              <div class="title-box">
+                  탭탭~
+              </div>
+              <ul class="nav nav-tabs tabs-basic">
+                  <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+                  <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+                  <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+                  <li><a data-toggle="tab" href="#menu3">Menu 3</a></li>
+              </ul>
+              
+              <div class="tab-content">
+                  <div id="home" class="tab-pane fade in active">
+                    <h3>HOME</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div>
+                  <div id="menu1" class="tab-pane fade">
+                    <h3>Menu 1</h3>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  </div>
+                  <div id="menu2" class="tab-pane fade">
+                    <h3>Menu 2</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                  </div>
+                  <div id="menu3" class="tab-pane fade">
+                    <h3>Menu 3</h3>
+                    <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                  </div>
+              </div>
+          </div>
       </div>
-    </div>
-  </section>
+  </div>
+</section>
+
 <!-- 섹션2 -->
-  <section>
-    <div class="container">
-        <div class="row">
-          <div class="col-xs-12 ">
-              <!-- 탭을 눌렀을 떄 -->
-        <!-- li 와 아이디와tab-content안에 id 속성이 연결되어 있는 형태  -->
-        <div class="title-box">헬로</div>
-       
-    <ul class="nav nav-tabs ">
-        <!--"active" 로  href와 id를 연결 시켜서 화면이동을 시켜줌 -->
-        <li class="active"><a data-toggle="tab" href="#tab1">Home</a></li>
-        <li><a data-toggle="tab" href="#tab2">Menu 1</a></li>
-        <li><a data-toggle="tab" href="#tab3">Menu 2</a></li>
-       
-      </ul>
-    
-      <div class="tab-content">
-        <div id="tab1" class="tab-pane fade in active">
-          <h3>HOME</h3>
-          <p>글 앞장</p>
-        </div>
-        <div id="tab2" class="tab-pane fade">
-          <h3>Menu 1</h3>
-          <p>글1</p>
-        </div>
-        <div id="tab3" class="tab-pane fade">
-          <h3>Menu 2</h3>
-          <p> 글2</p>
-        </div>
-       
+<section>
+  <div class="container">
+      <div class="row">
+          <div class="col-xs-12 col-md-10 col-lg-9 tabs-style">
+              <div class="title-box">
+                  탭탭~
+              </div>
+              <ul class="nav nav-tabs tabs-basic2">
+                  <li class="active"><a data-toggle="tab" href="#tab1">Home</a></li>
+                  <li><a data-toggle="tab" href="#tab2">Menu 1</a></li>
+                  <li><a data-toggle="tab" href="#tab3">Menu 2</a></li>
+
+              </ul>
+              
+              <div class="tab-content">
+                  <div id="tab1" class="tab-pane fade in active">
+                    <h3>HOME</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div>
+                  <div id="tab2" class="tab-pane fade">
+                    <h3>Menu 1</h3>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  </div>
+                  <div id="tab3" class="tab-pane fade">
+                    <h3>Menu 2</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                  </div>
+
+              </div>
+          </div>
       </div>
-    </div>
-  </section>
-    
+  </div>
+</section>
+
 
       <!-- 푸터 -->
       <footer>
